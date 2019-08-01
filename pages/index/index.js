@@ -263,6 +263,27 @@ Page({
     });
   },
   onReachBottom: function () { },
-  nono: function () { }
-
+  nono: function () { },
+ //今日招聘跳转
+  gojrzp: function () {
+    wx.navigateTo({
+      url: '../jrzp/jrzp/jrzp',
+    })
+  },
+  gofwfw: function () {
+    wx.navigateTo({
+      url: '../fwfw/fwfw',
+    })
+  },
+  ggclick: function (e) {
+    wx.navigateTo({
+      url: '../search/search',
+    })
+  },
+  //事件处理函数
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
+  },
 })

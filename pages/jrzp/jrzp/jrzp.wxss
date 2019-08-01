@@ -1,0 +1,106 @@
+/* pages/jrzp/jrzp.wxss */
+.jrzp-container{
+  display: flex;
+  flex-direction: column
+}
+/* 区域选择/行业选择  */
+.jrzp-head{
+  width: 100%;
+  height: 88rpx;
+  
+  border-bottom: 1px solid #999;
+  line-height: 88rpx;
+  text-align: center;
+}
+.jrzp-headr{
+  margin-left: 120rpx;
+}
+
+/* 工作选择 */
+.jrzp-gz{
+  width: 100%;
+  height:200rpx;
+  
+  border-bottom: 1px solid #999;
+}
+.jrzp-gz-center{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 162rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+
+  
+}
+.jrzp-gz-center1-1{
+  width: 128rpx;
+  height:128rpx;
+  
+  border-radius: 50%;
+  
+  /* background-image:url("../image/长期工@2x.png") */
+}
+.jrzp-gz-center1-1 image{
+  width: 128rpx;
+  height:128rpx;
+}
+.jrzp-gz-center2{
+  width: 128rpx;
+  height:162rpx; 
+  margin-left: 108rpx;
+}
+ 
+.jrzp-gz-center2-1{
+  width: 128rpx;
+  height:128rpx;
+  
+  border-radius: 50%
+  /* background-image:url(../image/长期工@2x.png) */
+}
+.jrzp-gz-center2-1 image{
+  width: 128rpx;
+  height:128rpx;
+}
+.jrzp-gz-center3{
+  width: 128rpx;
+  height:162rpx;  
+  margin-left: 108rpx;
+}
+.jrzp-gz-center3-1{
+  width: 128rpx;
+  height:122rpx;
+  
+  border-radius: 50% 
+  /* background-image:url(../image/长期工@2x.png) */
+}
+.jrzp-gz-center3-1 image{
+  width: 128rpx;
+  height:128rpx;
+}
+/* 公司选择 */
+.jrzp-gc{
+  width:100%;
+  height:380px;
+  background-color: #999;
+ text-align: center;
+ line-height: 330px
+}
+.jrzp-zbj{
+  width: 100%;
+  /* height: 120rpx; */
+  
+  margin: 0 auto
+}
+.jrzp-button{
+  width:600rpx;
+  height: 88rpx;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 88rpx;
+  background-color: #fff ;
+  margin-top: 20rpx;
+  border-radius:40rpx 40rpx 40rpx 40rpx;
+  box-shadow: 0 0 5px 5px  #72ffff;
+  
+} 

@@ -1,0 +1,40 @@
+<!--pages/jrzp/jrzp.wxml-->
+<view class="jrzp-container">
+  <!-- 区域选择/行业选择 -->
+  <view class="jrzp-head">
+    <text>选择区域{{char_lt}}</text>
+    <text class="jrzp-headr">选择行业{{char_lt}}</text>
+  </view>
+
+  <!-- 工作选择 -->
+  <view class="jrzp-gz">
+    <view class="jrzp-gz-center">
+      <view class="jrzp-gz-center1">
+        <view class="jrzp-gz-center1-1">
+          <image src='/images/yizhi/job/长期工@2x.png'></image>
+          </view>
+        <text>长期工</text>
+      </view>
+      <view class="jrzp-gz-center2">
+        <view class="jrzp-gz-center2-1">
+         <image src='/images/yizhi/job/小时@2x.png'></image>
+        </view>
+        <text>小时工</text>
+      </view>
+      <view class="jrzp-gz-center3">
+        <view class="jrzp-gz-center3-1">
+         <image src='/images/yizhi/job/兼职@2x.png'></image>
+        </view>
+        <text>大龄工</text>
+      </view>
+    </view>
+  </view>
+  <!-- 公司选择 -->
+  <view class="jrzp-gc" catchtap="goGsdetail">
+     <text>公司显示地址</text>
+  </view>
+  <!-- 直播间页面导航 -->
+  <view class="jrzp-zbj">
+       <view class="jrzp-button" catchtap="goVideo">招聘直播间</view>
+  </view>
+</view>

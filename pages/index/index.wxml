@@ -1,20 +1,19 @@
-<import src="../../model/model.wxml"/>
+<import src="../../model/model.wxml" />
 <i-row i-class="irowindex1">
-  < i-col span="4" i-class="col-class"  bindtap="loadLocation">
-    <image class="icon_img"  src="../../images/yizhi/index/address@2x.png" />
+  < i-col span="4" i-class="col-class" bindtap="loadLocation">
+    <image class="icon_img" src="../../images/yizhi/index/address@2x.png" />
     </i-col>
-   
-    < i-col span="8" i-class="col-class"  bindtap="translate">
 
-      <text class="" >{{city}}{{county}}</text>
+    < i-col span="8" i-class="col-class" bindtap="translate">
+
+      <text class="">{{city}}{{county}}</text>
       </i-col>
-    
-      < i-col span="4" i-class="col-class">
-        <image class="icon_img" src="../../images/yizhi/index/设置@2x.png" />
+
+      < i-col span="12" i-class="col-class">
+        <view class="userinfo-right" catchtap="inputclick">
+          <input type="text" placeholder="请输入公司名称" focus="{{flag}}" confirm-type="search"></input>
+        </view>
         </i-col>
-        < i-col span="8" i-class="col-class">
-          <input class="" placeholder="搜索公司名称" />
-          </i-col>
 </i-row>
 <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" style="height:450rpx;">
   <block wx:for="{{banner}}" wx:key="">
@@ -24,7 +23,7 @@
   </block>
 </swiper>
 
- <!-- <i-row i-class="irowindex3">
+<!-- <i-row i-class="irowindex3">
   <i-col span="4" i-class="col-class">
     <image class="icon_img" src="../../images/yizhi/index/address@2x.png" />
   </i-col>
@@ -36,16 +35,24 @@
   </i-col>
 </i-row>  -->
 
-   <view class="gg" catchtap="ggclick">
-                               <view class="gg1">
-                                 <image src="../../images/yizhi/index/laba@2x.png"></image>
-                               </view>
-                             <view class="gg2">
-                           <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="3000"> <block wx:for="{{msgList}}"> <navigator url="/pages/index/index?title={{item.url}}" open-type="navigate">  <swiper-item>  <view class="swiper_item">{{item.title}}</view>  </swiper-item> </navigator> </block></swiper>
-           </view>
-                             <view class="gg-button" >公告</view>
-                             </view>
-  <!-- <i-row i-class="irowindex2">
+<view class="gg" catchtap="ggclick">
+  <view class="gg1">
+    <image src="../../images/yizhi/index/laba@2x.png"></image>
+  </view>
+  <view class="gg2">
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="3000">
+      <block wx:for="{{msgList}}">
+        <navigator url="/pages/index/index?title={{item.url}}" open-type="navigate">
+          <swiper-item>
+            <view class="swiper_item">{{item.title}}</view>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
+  </view>
+  <view class="gg-button">公告</view>
+</view>
+<!-- <i-row i-class="irowindex2">
     < i-col offset="3" span="8" i-class="col-class">
       <i-button type="primary" bind:click="handleClick1">今日招聘</i-button>
       </i-col>
@@ -53,14 +60,15 @@
         <i-button type="primary" bind:click="handleClick2">法务服务</i-button>
         </i-col>
   </i-row> -->
-   <view class="userbottom">
-    <view class="userbottom-l" catchtap="gojrzp">今日招聘</view>
-     <view class="userbottom-r" catchtap="gofwfw">法务服务</view>
-  </view>
- 
-   <modal hidden="{{visible}}" title="登录" confirm-text="确定" cancel-text="取消" bindcancel="cancel"     bindconfirm="confirm" no-cancel="{{nocancel}}">
-    <button open-type="getUserInfo"class="wxlogin"  bindtap="doLogin" > <image src="../../images/yizhi/index/weixinlog.png"style="height:45rpx; width:45rpx" ></image> 微信登录</button>
-    <button open-type="" class="primary"  bind:click="" >手机登录</button>
+<view class="userbottom">
+  <view class="userbottom-l" catchtap="gojrzp">今日招聘</view>
+  <view class="userbottom-r" catchtap="gofwfw">法务服务</view>
+</view>
+
+<modal hidden="{{visible}}" title="登录" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+  <button open-type="getUserInfo" class="wxlogin" bindtap="doLogin">
+    <image src="../../images/yizhi/index/weixinlog.png" style="height:45rpx; width:45rpx"></image> 微信登录</button>
+  <button open-type="" class="primary" bind:click="">手机登录</button>
 </modal>
 
-<template is="areaData" data="{{...item}}"/>
+<template is="areaData" data="{{...item}}" />

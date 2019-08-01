@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#062f8e",
+  "navigationBarTitleText": "今日招聘",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

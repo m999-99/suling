@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+  "i-collapse": "../../../dist/collapse/index",
+  "i-collapse-item": "../../../dist/collapse-item/index",
+  "i-button": "../../../dist/button/index"
+  },
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#062f8e",
+  "navigationBarTitleText": "企业详情",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}
