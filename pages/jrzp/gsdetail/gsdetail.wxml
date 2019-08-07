@@ -60,8 +60,8 @@
 </view>
             <!-- 底部链接 -->
 <view class="gsbottom">
-<i-button catchtap="handlevideo" type="success">招聘直播</i-button>
-<i-button catchtap="handleface" type="warning" >面试报名</i-button>
+<i-button catchtap="handlevideo" type="success" class="success-button">招聘直播</i-button>
+<i-button catchtap="handleface" type="warning"  class="warning-button">面试报名</i-button>
 </view>
 </view>
 

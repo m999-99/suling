@@ -61,20 +61,20 @@ Page({
     that.setData({
       useData:newsData.initData
     })
-  //   wx.request({
-  // url: 'https://192.168.1.123:8443/easyjob/entprz/listentprz',
-  // method:'GET',
-  // success(res){
+//     wx.request({
+//   url: 'https://192.168.1.123:8443/easyjob/entprz/listentprz',
+//   method:'GET',
+//   success(res){
   
-  //   console.log("resdata:"+res.data)
-  //     that.setData({
-  //       useData: res.data
-  //     })
+//     console.log("resdata:"+res.data)
+//       that.setData({
+//         useData: res.data
+//       })
       
       
    
-  }
- })
+//   }
+//  })
     wx.getSystemInfo({
 
       success: function (res) {

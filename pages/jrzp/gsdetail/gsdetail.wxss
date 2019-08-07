@@ -62,8 +62,8 @@ background-color: #f6f6f6
      .gsbottom{
        display: flex;
        flex-direction: row;
-       margin: 0 auto
+       
      }
-     .gsbottom-l{
-      
+     .success-button{
+       width: 
      }

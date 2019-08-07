@@ -13,7 +13,7 @@ App({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         wx.request({
-          url: 'https://192.168.1.123:8443/easyjob/wxlogin?code=' + res.code,
+          
           data: {},
           header: {
             'content-type': 'json'

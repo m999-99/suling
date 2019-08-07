@@ -53,7 +53,7 @@
 
         <ul>
           <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
-            <view catchtap="goGsdetail" data-newsid="{{item.newsid}}">
+            <view catchtap="goGsdetail" data-etprzid="{{item.etprzid}}">
               <template is="jrzpTemplate" data="{{...item}}" />
             </view>
 

@@ -58,89 +58,89 @@
      "name": "研六电子（苏州）有限公司"
    },
    {
-     "newsid": 5,
+     "etprzid": 5,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 6,
+     "etprzid": 6,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 7,
+     "etprzid": 7,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 8,
+     "etprzid": 8,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 9,
+     "etprzid": 9,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 10,
+     "etprzid": 10,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 11,
+     "etprzid": 11,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 12,
+     "etprzid": 12,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 13,
+     "etprzid": 13,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 14,
+     "etprzid": 14,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 15,
+     "etprzid": 15,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 16,
+     "etprzid": 16,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 17,
+     "etprzid": 17,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 18,
+     "etprzid": 18,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 19,
+     "etprzid": 19,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 20,
+     "etprzid": 20,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    },
    {
-     "newsid": 21,
+     "etprzid": 21,
      "gsicon": "/images/yizhi/job/长期工@2x.png",
-     "gsname": "聚缘阁科技"
+     "shortName": "聚缘阁科技"
    }
 ]
   //  导出被jrzp.js接收
