@@ -11,6 +11,7 @@ var item = {};
 
 Page({
   data: {
+    bsshow:"请输入搜索的公司",
     canIUseSession: true,
     banner: ["http://m.qpic.cn/psb?/V13Cv6dH1DBP2N/urWqqHAaxru5d7oIcAZyHPb0iQgodIsxkWnDtBUfj1Q!/b/dE0BAAAAAAAA&bo=IAMsAQAAAAARBz4!&rf=viewer_4", "http://m.qpic.cn/psb?/V13Cv6dH1DBP2N/el7r8l11ekGE5B7cVvhYRU0XGajvACkJoDaTNWryC7U!/b/dL8AAAAAAAAA&bo=IAMsAQAAAAARFy4!&rf=viewer_4", "http://m.qpic.cn/psb?/V13Cv6dH1DBP2N/8ijR1ZEFDq7G2sVoLwOZ7qmnvTFkIAYX1VFIQG.mpJo!/b/dLgAAAAAAAAA&bo=IAMsAQAAAAARFy4!&rf=viewer_4"],
     visible: true,
@@ -45,11 +46,20 @@ Page({
 
     bannerHeight: Math.ceil(290.0 / 750.0 * getApp().screenWidth)
   },
-
+  ggclick: function (e) {
+    wx.navigateTo({
+      url: '../search/search',
+    })
+  },
 
   onLoad: function (options) {
+    
     var that = this;
+
     var isAuth = app.globalData.isAuth;
+   
+ 
+     
     console.log("onloadIsAuth:" + isAuth)
     wx.getSetting({
       success(res) {
@@ -171,7 +181,7 @@ Page({
       success: function (res2) {
         console.log("RES2.DATA:" + res2.data);
         wx.request({
-          url: 'http://127.0.0.1:8080/easyjob/upduser',
+          url: 'https://192.168.1.123:8443/easyjob/upduser',
           method: "POST",
           data: {
             openid: res2.data,

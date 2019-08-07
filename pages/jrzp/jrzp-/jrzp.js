@@ -1,33 +1,16 @@
-// pages/jrzp/gspeople/gspeople.js
+// pages/jrzp/jrzp-/jrzp.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    schoolList: ['博士', '研究生', '本科', '大专', '中专', '高中', '初中','小学'],
-    baseInfo: {
-      id: '', // the id of a piece data
-      userName: '',
-      userGender: 2,
-      birthData: '',
-      eMail: '',
-      phoneNumber: '',
-      job: '',
-      salary: '',
-      address: '',
 
-    },
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  success:function(){
-    wx.navigateTo({
-      url: '../../jrzp/success/success',
-    })
-  },
   onLoad: function (options) {
 
   },

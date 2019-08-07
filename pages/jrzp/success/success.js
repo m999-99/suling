@@ -1,4 +1,4 @@
-// pages/admin/me/me.js
+// pages/jrzp/success/success.js
 Page({
 
   /**
@@ -11,6 +11,11 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  jrzp:function(){
+    wx.navigateTo({
+      url: '../../jrzp/jrzp/jrzp',
+    })
+  },
   onLoad: function (options) {
 
   },

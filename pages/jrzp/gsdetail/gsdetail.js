@@ -1,4 +1,5 @@
 // pages/jrzp/gsdetail/gsdetail.js
+var newsData = require("../../data/newsdata.js");
 Page({
 
   /**
@@ -6,7 +7,10 @@ Page({
    */
   data: {
     char_lt: ">",
-    name: 'name1'
+    banner: ["http://m.qpic.cn/psb?/V13Cv6dH1DBP2N/urWqqHAaxru5d7oIcAZyHPb0iQgodIsxkWnDtBUfj1Q!/b/dE0BAAAAAAAA&bo=IAMsAQAAAAARBz4!&rf=viewer_4", "http://m.qpic.cn/psb?/V13Cv6dH1DBP2N/el7r8l11ekGE5B7cVvhYRU0XGajvACkJoDaTNWryC7U!/b/dL8AAAAAAAAA&bo=IAMsAQAAAAARFy4!&rf=viewer_4", "http://m.qpic.cn/psb?/V13Cv6dH1DBP2N/8ijR1ZEFDq7G2sVoLwOZ7qmnvTFkIAYX1VFIQG.mpJo!/b/dLgAAAAAAAAA&bo=IAMsAQAAAAARFy4!&rf=viewer_4"],
+    name1: 'name1'
+    
+    
   },
 
   /**
@@ -17,8 +21,15 @@ Page({
       url: '../../jrzp/gspeople/gspeople',
     })
   },
+  handlevideo:function(){
+    wx.switchTab({
+      url: '../../live/detail/detail',
+    })
+  },
   onLoad: function (options) {
-
+    //console.log(options.etprzid)
+    var that=this;
+    that.setData(newsData.initData[options.etprzid])
   },
  
 

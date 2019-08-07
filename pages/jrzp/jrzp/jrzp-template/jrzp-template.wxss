@@ -1,0 +1,40 @@
+/* 公司选择 */
+.jrzp-gc{
+  width:100%;
+  height:auto;
+  background-color: #eee;
+ padding: 16rpx;
+ box-sizing: border-box
+}
+.jrzp-gc .jrzp-g-nr{
+  width:90%;
+  height:auto;
+  margin: 0 auto;
+}
+.jrzp-gc .jrzp-g-nr ul{
+  display: flex;
+  flex-wrap: wrap;   
+   /* 一行填满后会自动换行 */
+  padding: 0;
+  justify-content: center
+ 
+}
+.jrzp-gc .jrzp-g-nr ul li{
+  display: flex;
+  flex-direction: column;
+   flex-grow:1;
+  width: 140rpx;
+  text-align: center;
+  
+ margin: 20rpx 30rpx 
+
+}
+.jrzp-g-nr li .jrzp-image {
+ width: 100rpx;
+ height: 100rpx;
+ margin: 0 auto
+}
+.jrzp-g-nr li .jrzp-text{
+  margin-top: 10rpx;
+  font-size: 26rpx;
+}

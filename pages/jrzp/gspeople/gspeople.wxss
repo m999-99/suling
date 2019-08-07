@@ -1,1 +1,48 @@
 /* pages/jrzp/gspeople/gspeople.wxss */
+.person-resume{
+  padding: 0;
+  margin: 0;
+  width: 100%
+}
+.resumeSubmit{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto
+
+}
+.placeholdeCenter{
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.resumeContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 88rpx;
+ line-height: 88rpx;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #ededed
+}
+.resumeContainer-l{
+  font-weight: bold;
+width: 30%;
+height: 100%;
+
+font-size: 30rpx;
+text-align: right;
+color: #333;
+
+
+}
+.resumeContainer-r{
+width: 70%;
+height: 100%;
+text-align:center;
+font-size: 28rpx;
+color: #666;
+
+
+}

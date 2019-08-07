@@ -2,11 +2,10 @@
   "usingComponents": {
     "i-input": "../../../dist/input/index",
     "i-panel": "../../../dist/panel/index"
-    
-    },
+  },
   "backgroundTextStyle": "dark",
   "navigationBarBackgroundColor": "#062f8e",
-  "navigationBarTitleText": "创建简历",
+  "navigationBarTitleText": "苏领招聘",
   "navigationBarTextStyle": "white",
   "enablePullDownRefresh": true
 }

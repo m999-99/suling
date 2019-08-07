@@ -1,47 +1,58 @@
 <!--pages/jrzp/gsdetail/gsdetail.wxml-->
 <view class="gscontainer">
- <view class="gsvideo1">视频介绍</view>
+ <view class="gsbanner">
+  <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" style="height:350rpx;">
+  <block wx:for="{{banner}}" wx:key="">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-image" bindtap="showGoods" mode="widthFit" style="width:100%;height:350rpx"/>
+    </swiper-item>
+  </block>
+</swiper>
+ </view>
 
        <!-- 公司信息 -->
- <text class="gstitle">研二电子（苏州）有限公司</text>
+ <text class="gstitle">{{name}}</text>
 <view class="gs-content">
 <view class="gs-content-t">
 <view class="gs-content-tl">招聘岗位：</view>
 <view class="gs-content-tc">普工</view>
 </view>
+<view class="gs-content-t">
+<view class="gs-content-tl">企业负责人：</view>
+<view class="gs-content-tc">{{contactPeople}}</view>
+</view>
+<view class="gs-content-t3">
+<view class="gs-content-tl">联系电话：</view>
+<view class="gs-content-tc">{{phone}}</view>
+</view>
 
 <view class="caption-wrap">
     
-    <i-collapse name="{{name}}">
+    <i-collapse name="{{name1}}">
         <i-collapse-item title="任职要求" name="name1">
-            <view slot="content">
-               年纪18-35岁，无纹身，无不良违法记录。遵纪守法，好好干活。
+            <view slot="content"class="rzyq">
+               {{requirement}}
             </view>
         </i-collapse-item>
         <i-collapse-item title="薪资待遇" name="name2">
-            <view slot="content" i-class-content="green-text">
-                底薪2200元。每天8小时。加班每小时15元，保守估计每月5000元左右
+            <view slot="content" i-class-content="green-text" class="xzdy"> 
+                {{salary}}
             </view>
         </i-collapse-item>
         <i-collapse-item title="公司地址" name="name3">
-            <view slot="content">
-               苏州工业园区东富路东景工业坊40#
+            <view slot="content" class="gsdz">
+               {{addres}}
             </view>
         </i-collapse-item>
          <i-collapse-item title="企业简介" name="name4">
-            <view slot="content">
-              研二电子（苏州）有限公司是苏州银行旗下企业，专门做电子设备和高精端技术的企业
+            <view slot="content" class="qyjj">
+              {{introduction}}
             </view>
         </i-collapse-item>
-        <i-collapse-item title="企业负责人：张先生" name="name5">
-            
-        </i-collapse-item>
-        <i-collapse-item title="联系电话：199512221222" name="name6">
-            
-        </i-collapse-item>
-        <i-collapse-item title="集合通知" name="name7">
-            <view slot="content">
-              研二电子（苏州）有限公司是苏州银行旗下企业，专门做电子设备和高精端技术的企业
+        
+        <i-collapse-item title="集合通知" name="name5">
+            <view slot="content" class="jhtz">
+             {{jhtz}}
             </view>
         </i-collapse-item>
     </i-collapse>

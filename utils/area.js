@@ -1,7 +1,7 @@
 
 var str = [];
 wx.request({
-  url: 'http://localhost:8080/easyjob/getAddressData',
+  url: 'https://192.168.1.123:8443/easyjob/getAddressData',
   success(res) {
     if (res.data) {
 

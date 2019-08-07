@@ -1,2 +1,53 @@
 <!--pages/jrzp/gspeople/gspeople.wxml-->
-<text>pages/jrzp/gspeople/gspeople.wxml</text>
+
+
+<view class="person-resume">
+    <view class="resumeSubmit">
+    <form bindsubmit="resumeSubmitStyle" bindreset="resumeResetStyle">
+      <view class="resumeContainer">
+        <view class="resumeContainer-l">姓名：</view>
+          <view class="resumeContainer-r">
+          <input name="userName" value="{{ baseInfo.userName }}" placeholder="请填写真实姓名" placeholder-class="placeholdeCenter"></input>
+          </view>
+        </view>
+
+        <view class="resumeContainer">
+        <view class="resumeContainer-l">性别：</view>
+          <view class="resumeContainer-r">
+         <radio-group name="userGender" class="radioGroupStyle">
+                            <label>
+                                <radio name="girl" value="0" checked="{{ baseInfo.userGender === 0 }}" />女
+                                <radio name="boy" value="1" checked="{{ baseInfo.userGender === 1 }}" />男
+                            </label>
+                        </radio-group>
+          </view>
+        </view>
+
+        <view class="resumeContainer">
+        <view class="resumeContainer-l">联系电话：</view>
+          <view class="resumeContainer-r">
+          <input name="phoneNumber" value="{{ baseInfo.phoneNumber }}" placeholder="请填写真实电话" placeholder-class="placeholdeCenter" bindinput="handlePhoneNumber"maxlength="11"></input>
+          </view>
+        </view>
+
+        <view class="resumeContainer">
+        <view class="resumeContainer-l">出生年月：</view>
+          <view class="resumeContainer-r">
+           <picker mode="date" start="1500-01-01" end="2080-06-06" bindchange="handleDateChange">
+                            <input name="birthData" disabled value="{{ baseInfo.birthData }}"  placeholder="请选择出生年月"></input>
+                        </picker>
+          </view>
+        </view>
+
+        <view class="resumeContainer">
+        <view class="resumeContainer-l">最高学历：</view>
+          <view class="resumeContainer-r">
+            <picker bindchange="changeSchool"  value="{{schoolIndex}}" range="{{schoolList}}">
+    <input placeholder="请选择最高学历"value="{{ baseInfo.birthData }}"> {{schoolList[schoolIndex]}}</input>
+                </picker>
+          </view>
+        </view>
+        </form>
+     </view>
+</view>
+

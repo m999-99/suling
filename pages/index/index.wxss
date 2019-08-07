@@ -248,25 +248,27 @@ line-height:100rpx;
   color: green;
   vertical-align: middle
 }
-/* .userinfo-right input{
+.search{
+  position: relative;
+  margin-right: 10rpx
+}
+.search input{
   border:1px solid #ccc;
-  width:80%;
-  height: 66rpx;
-  background-color: #ededed;
-  vertical-align: middle;
-  border-radius: 30rpx;
-  margin: 11rpx auto;
-} */
+  border-radius: 6px;
+  height: 30px;
+   font-size: 30rpx;
+   padding-left: 30rpx
+}
 .icons{
   position: absolute;
-  right:26px;
-  top:8px;
-  
+  right: 10rpx;
+  top:5px;
 }
+
                     /* <!-- 定位和搜索结束 --> */
                     /* <!--  首页banner开始 --> */
 .usermidd .swiper-image{
-  height: 350rpx;
+  height: 250rpx;
   width: 100%
 }
 .usermidd .swiper-image image{
