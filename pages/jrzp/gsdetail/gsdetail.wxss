@@ -65,5 +65,10 @@ background-color: #f6f6f6
        
      }
      .success-button{
-       width: 
+       width: 30%;
+       
+     }
+     .warning-button{
+       width: 60%;
+       margin-left: 20rpx;
      }
